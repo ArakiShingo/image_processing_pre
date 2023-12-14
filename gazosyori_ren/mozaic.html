@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+  <script src="https://cdn.jsdelivr.net/npm/face-api.js"></script>
+  <script src="mozaic.js"></script>
+</head>
+
+<body>
+  <div>
+    <input type="button" value="カメラ起動" onclick="cameraInit()">
+    <input type="button" value="モザイク" onclick="applyMosaic()">
+  </div>
+  <div>
+    <video id="camera" autoplay muted playsinline></video>
+  </div>
+</body>
+
+</html>

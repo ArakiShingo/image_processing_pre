@@ -1,0 +1,12 @@
+face
+　├ assets/ (顔認識にかける画像データを格納します)
+　├ weights/ (モデルデータ1式です)
+　├ face-api.js (face-api.jsライブラリ本体です)
+　├ index.html (プログラムを起動するファイルです)
+　├ main.js (メインのプログラムを記述するファイルです)
+
+画像元：
+https://luffandpiece.com/
+
+コードの参考：
+https://zenn.dev/sdkfz181tiger/articles/3b03385165d4f2
