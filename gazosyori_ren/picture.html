@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script src="picture.js"></script>
+</head>
+
+<body>
+  <div>
+    <input type="button" value="カメラ起動" onclick="cameraInitSmartphoneSupport()">
+    <input type="button" value="撮影" onclick="shoot()">
+  </div>
+  <div>
+    <video id="camera" autoplay muted playsinline></video>
+    <canvas id="canvas" crossorigin="anonymous"></canvas>
+  </div>
+</body>
+
+</html>
