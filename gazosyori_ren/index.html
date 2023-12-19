@@ -1,17 +1,36 @@
+<!DOCTYPE html>
 <html>
 
 <head>
-  <script src="index.js"></script>
+  <script src="api/face-api.js"></script>
+  <style>
+    .active {
+      background-color: #000;
+      color: #fff;
+    }
+
+    .inactive {
+      background-color: rgb(174, 5, 5);
+      color: #000;
+    }
+  </style>
 </head>
 
 <body>
   <div>
-    <input type="button" value="カメラ起動" onclick="cameraInit()">
-
+    <input type="button" value="カメラ起動" onclick="cameraInit()" class="active" id="cameraButton">
+    <input type="button" value="撮影" onclick="shoot()" class="active" id="shootButton">
+    <input type="button" value="モザイク" onclick="setMode(1)" class="inactive" id="mosaicButton">
+    <input type="button" value="目黒棒" onclick="setMode(2)" class="inactive" id="blackBarsButton">
+    <input type="button" value="コラ画像" onclick="setMode(3)" class="inactive" id="collageButton">
+    <input type="button" value="リセット" onclick="resetCamera()" class="inactive" id="resetButton">
   </div>
   <div>
-    <video id="camera" autoplay muted playsinline></video>
+    <video id="camera" autoplay muted playsinline width="300" height="400"></video>
+    <canvas id="canvas" crossorigin="anonymous"></canvas>
   </div>
+
+  <script src="index.js"></script>
 </body>
 
 </html>
