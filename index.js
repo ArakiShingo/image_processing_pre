@@ -9,11 +9,11 @@ let btn = 0; // ボタンの状態。初期状態: 0, モザイク: 1, 目黒棒
 
 const loadModels = async () => {
   console.log('Loading models...');
-  await faceapi.nets.tinyFaceDetector.loadFromUri('/models');
+  await faceapi.nets.tinyFaceDetector.loadFromUri('/models/tiny_face_detector_model-weights_manifest.json');
   console.log('TinyFaceDetector model loaded');
-  await faceapi.nets.faceLandmark68Net.loadFromUri('/models');
+  await faceapi.nets.faceLandmark68Net.loadFromUri('/models/face_landmark_68_model-weights_manifest.json');
   console.log('FaceLandmark68Net model loaded');
-  await faceapi.nets.faceRecognitionNet.loadFromUri('/models');
+  await faceapi.nets.faceRecognitionNet.loadFromUri('/models/face_recognition_model-weights_manifest.json');
   console.log('FaceRecognitionNet model loaded');
 };
 
