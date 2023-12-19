@@ -4,6 +4,10 @@
 <head>
   <script src="api/face-api.js"></script>
   <style>
+    .main {
+      background-color: rgb(25, 69, 227);
+      color: #000;
+    }
     .active {
       background-color: #000;
       color: #fff;
@@ -18,8 +22,8 @@
 
 <body>
   <div>
-    <input type="button" value="カメラ起動" onclick="cameraInit()" class="active" id="cameraButton">
-    <input type="button" value="撮影" onclick="shoot()" class="active" id="shootButton">
+    <input type="button" value="カメラ起動" onclick="cameraInit()" class="mian" id="cameraButton">
+    <input type="button" value="撮影" onclick="shoot()" class="main" id="shootButton">
     <input type="button" value="モザイク" onclick="setMode(1)" class="inactive" id="mosaicButton">
     <input type="button" value="目黒棒" onclick="setMode(2)" class="inactive" id="blackBarsButton">
     <input type="button" value="コラ画像" onclick="setMode(3)" class="inactive" id="collageButton">
